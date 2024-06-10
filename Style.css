@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: 'modern';
     src: url('fonts/Sk-Modernist-Bold.otf') format('opentype');
@@ -11,9 +12,12 @@ body {
     box-sizing: border-box;
     background-color: #f2f2f2;
     color: #333;
+    min-height: 100vh;
 }
 h1{
     font-family: 'modern';
+  
+
 }
 
 
@@ -254,8 +258,7 @@ nav{
 h1 {
   font-size: 4.4rem;
   font-weight: 900;
-  word-spacing: 12px;
-  padding-inline-start: 1rem;
+ 
 }
 
 .marque__inner-wrapper {
@@ -334,47 +337,101 @@ h1 {
 
 
 /* Why Choose Easybank */
-.why-easybank {
-    padding: 40px 20px;
-    background-color: #fff;
+.section {
+    width: 100%;
+    background-image: url('./img/blue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     text-align: center;
-}
-
-.why-easybank h2 {
-    margin-bottom: 40px;
-    font-size: 2.5em;
-    color: #333;
-}
-
-.features {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.why-easybanck-content {
+    display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 4%;
+  
+    
+    
 }
 
-.feature {
-    max-width: 200px;
-    margin: 20px;
-    text-align: center;
+.why-easybanck-text {
+    flex: 1;
+    min-width: 250px;
+    font-family: "Public Sans";
 }
 
-.feature img {
-    width: 50px;
-    height: 50px;
+.why-easybanck-text .feature {
+    margin-bottom: 20px;
+}
+.title_why {
+    font-family: 'modern';
+    color: white;
+    margin-top: 8%;
+}
+.why-easybanck-text .feature h3 {
+    font-family: 'modern';
+    text-align: left;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-.feature h3 {
-    margin: 20px 0 10px 0;
-    font-size: 1.2em;
+.why-easybanck-text .feature p {
+    font-size: 1em;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Public Sans";
 }
 
-.feature p {
-    margin: 0;
-    font-size: 0.9em;
-    color: #666;
+
+.why-easybanck-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.why-easybanck-image img {
+    max-width: 70%;
+    height: auto;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+        background-image: url('./img/bluephone.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+       
+    
+    }
+    .why-easybanck-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .why-easybanck-text {
+        max-width: 400px;
+    }
+    .why-easybanck-image img {
+        max-width: 40%;
+        height: auto;
+    }
+    
+    
+}
 /* Latest Articles */
 .latest-articles {
     padding: 40px 20px;
@@ -464,3 +521,34 @@ footer p {
   
 
 }
+button {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: 'modern';
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 9em;
+   }
+ 
