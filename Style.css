@@ -1,12 +1,21 @@
+@font-face {
+    font-family: 'modern';
+    src: url('fonts/Sk-Modernist-Bold.otf') format('opentype');
+}
+ 
 /* styles.css */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif,'modern';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #f2f2f2;
     color: #333;
 }
+h1{
+    font-family: 'modern';
+}
+
 
 /* Menu */
 
@@ -16,7 +25,7 @@ menu{
     padding: 0;
     color: #f2f5f7;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'modern';
     letter-spacing: 1px;
     font-weight: 300;
 }
@@ -24,7 +33,6 @@ nav{
     height: 6rem;
     width: 100vw;
     background-color: #f5f5f5;
-    text-decoration: none;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     position: fixed;
@@ -33,33 +41,30 @@ nav{
 
 /*Styling logo*/
 .logo{
-    padding:1vh 1vw;
+    padding: 2vh 5vw;
     text-align: center;
 }
 .logo img {
-    height: 5rem;
-    width: 5rem;
+    height: 2rem;
+    width: 10rem;
+    margin-top: 20px;
 }
-.Logo Image{
-    height: 5rem;
-    width: 5rem;
-    color: #f2f2f2;
-}
-/*Styling Links*/
+
+
 .nav-links{
     display: flex;
-    list-style: none; 
+    list-style: none;
     width: 88vw;
-    padding: 0 0.7vw;
+    padding: 12px 8.7vw;
     color: #f2f2f2;
     justify-content: space-evenly;
     align-items: center;
-    text-transform: uppercase;
 }
 .nav-links li a{
     text-decoration: none;
     margin: 0 0.7vw;
     color: #000000;
+    font-weight: bold;
 }
 .nav-links li a:hover {
     color: #61DAFB;
@@ -73,6 +78,7 @@ nav{
     height: 3px;
     width: 0%;
     background-color: #61DAFB;
+
     position: absolute;
     transition: all ease-in-out 250ms;
     margin: 0 0 0 10%;
@@ -94,22 +100,24 @@ nav{
 }
 .login-button:hover {
     color: #131418;
-    background-color: #f2f5f7;
-    border:1.5px solid #f2f5f7;
+    background-color: #3ca1e4;
+    border:1.5px solid #3ca1e4;
     transition: all ease-in-out 350ms;
 }
 .join-button{
     color: #131418;
-    background-color: #61DAFB;
-    border: 1.5px solid #61DAFB;
+    font-family: 'modern';
+    background-color: #31D35C;
+    border: 1.5px solid #31D35C;
     border-radius: 2em;
     padding: 0.6rem 0.8rem;
     font-size: 1rem;
     cursor: pointer;
+    color: white;
 }
 .join-button:hover {
     color: #f2f5f7;
-    background-color: transparent;
+    background-color: #3ca1e4;
     border:1.5px solid #f2f5f7;
     transition: all ease-in-out 350ms;
 }
@@ -118,7 +126,7 @@ nav{
 .hamburger div{
     width: 30px;
     height:3px;
-    background: #f2f5f7;
+    background: #000000;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -144,7 +152,7 @@ nav{
     }
     .nav-links{
         position: fixed;
-        background: #131418;
+        background: #ededf0;
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -206,9 +214,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    background: linear-gradient(to right, #31d35c, #2bb673);
+    background-image: url('./img/bhome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
-    min-height: 60vh;
+    min-height: 100vh;
     text-align: left;
 }
 
@@ -231,6 +241,97 @@ nav{
     height: auto;
     border-radius: 10px;
 }
+/*Marque*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
+
+
+
+.marque {
+  min-height: 10vh;
+  
+}
+
+h1 {
+  font-size: 4.4rem;
+  font-weight: 900;
+  word-spacing: 12px;
+  padding-inline-start: 1rem;
+}
+
+.marque__inner-wrapper {
+  height: 100%;
+  max-width: 104rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-content: center;
+  margin-inline: auto;
+  margin-block-start: 6rem;
+}
+
+.outline__text {
+  font-family: sans-serif;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: white;
+}
+
+.marquee {
+  width: 100%;
+  height: 12rem;
+  pointer-events: none;
+  background-image: url('./img/marque.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  box-shadow: 0 2rem 2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.marquee__inner-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.marquee span {
+  text-align: center;
+  color: lightgray;
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: max(2vw, 2.4rem);
+  line-height: 1.2;
+  font-weight: 700;
+  padding: 1vh 1vw 0;
+  text-transform: uppercase;
+}
+
+.marquee__img {
+  width: max(8rem, 12vw);
+  height: 8rem;
+  margin: 0 4vw;
+  border-radius: 100rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #444;
+  filter: grayscale(0.6);
+}
+
+.marquee__inner {
+  height: 100%;
+  width: fit-content;
+  align-items: center;
+  display: flex;
+  position: relative;
+  animation: marquee 50s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
 
 /* Why Choose Easybank */
 .why-easybank {
