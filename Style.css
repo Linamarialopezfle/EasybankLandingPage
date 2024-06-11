@@ -369,6 +369,10 @@ h1 {
     min-width: 250px;
     font-family: "Public Sans";
 }
+.p-why{
+    width: 75%;
+    color: white;
+}
 
 .why-easybanck-text .feature {
     margin-bottom: 20px;
@@ -377,6 +381,7 @@ h1 {
     font-family: 'modern';
     color: white;
     margin-top: 8%;
+    font-size: 2em;
 }
 .why-easybanck-text .feature h3 {
     font-family: 'modern';
@@ -429,20 +434,29 @@ h1 {
         max-width: 40%;
         height: auto;
     }
-    
+    .title_why {
+    font-family: 'modern';
+    color: white;
+    margin-top: 8%;
+    font-size: 1.5em;
+}
     
 }
 /* Latest Articles */
 .latest-articles {
     padding: 40px 20px;
     text-align: center;
-    background-color: #f7f7f7;
+    background-image: url('./img/bannerblog.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .latest-articles h2 {
     margin-bottom: 40px;
     font-size: 2.5em;
     color: #333;
+    font-family: 'modern';
 }
 
 .articles {
@@ -453,10 +467,10 @@ h1 {
 }
 
 .article {
-    max-width: 200px;
+    max-width: 348px;
     margin: 20px;
     text-align: left;
-    background-color: #fff;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -509,6 +523,10 @@ footer p {
     .hero-content, .hero-image {
         max-width: 100%;
     }
+    .hero-content h1 {
+      
+        margin-top: 94px;
+    }
 
     .features, .articles {
         flex-direction: column;
@@ -552,3 +570,46 @@ button {
     width: 9em;
    }
  
+
+
+.scale-up-left{animation:scale-up-left 0.4s; }
+ @keyframes scale-up-left{
+    0%{transform:scale(.5);transform-origin:left center}
+    100%{transform:scale(1);transform-origin:left center}
+}
+
+.scale-up-vertical-top{animation:scale-up-vertical-bottom 0.4s linear}
+ @keyframes scale-up-vertical-bottom{
+    0%{
+        transform:scaleY(.4);
+        transform-origin:center bottom}
+    100%{
+        transform:scaleY(1);
+        transform-origin:center bottom}
+}
+
+
+.slide-top{animation:slide-top 0.4s linear both}
+@keyframes slide-top{0%
+    {transform:translateY(0)}
+    100%{transform:translateY(-100px)}
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.title.animate {
+    animation: fadeInUp 0.5s forwards;
+}
