@@ -24,10 +24,13 @@ Thorough functionality and performance testing.
 ✨ UX Strategy
 
 Research and Analysis
+
 Interviews and Surveys: Conduct interviews and surveys with young users to gather information about their financial habits and expectations.
 Competitor Analysis: Study the websites of banks and financial apps aimed at young users to identify strengths and areas for improvement.
 User Analysis: Create personas and scenarios based on the collected data to better understand the users.
+
 Definition and Strategy
+
 Value Proposition: Clarify what makes Easybank unique and how it benefits young users.
 SMART Goals: Set specific, measurable, achievable, relevant, and time-bound objectives for the project.
 User Experience Design
@@ -39,6 +42,7 @@ Frontend Development: Write HTML, CSS, and JavaScript code according to the desi
 Responsiveness Testing: Ensure the page works correctly on mobile devices, tablets, and desktops.
 Accessibility Testing: Implement accessibility practices to ensure the page is usable for people with disabilities.
 Launch and Monitoring
+
 Deployment: Publish the page on a server or hosting platform.
 Monitoring and Analysis: Use tools like Google Analytics to monitor user behavior and gather performance data.
 Continuous Feedback: Collect user feedback and make continuous improvements based on their suggestions and issues encountered.
