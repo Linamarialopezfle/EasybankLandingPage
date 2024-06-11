@@ -36,6 +36,9 @@ SMART Goals: Set specific, measurable, achievable, relevant, and time-bound obje
 User Experience Design
 Wireframes: Create low-fidelity sketches and wireframes to plan the structure and navigation of the page.
 High-Fidelity Prototypes: Develop interactive prototypes that reflect the final design and allow for usability testing.
+
+![wireframe](https://github.com/Linamarialopezfle/EasybankLandingPage/assets/59810941/b1299768-e4ba-42b6-874c-64a8aef782b6)
+
 Usability Testing: Conduct usability tests with representative users to identify problems and areas for improvement.
 Development and Implementation
 Frontend Development: Write HTML, CSS, and JavaScript code according to the design and style guide.
