@@ -53,6 +53,7 @@ A/B Testing: Implement A/B tests to experiment with different versions of the pa
 ![PALETA DE COLORES](https://github.com/Linamarialopezfle/EasybankLandingPage/assets/59810941/eac6793e-3e72-4975-8972-46014519c088)
 
 Color Palette
+
 Primary
 Dark Blue: hsl(233, 26%, 24%)
 Lime Green: hsl(136, 65%, 51%)
@@ -62,6 +63,7 @@ Grayish Blue: hsl(233, 8%, 62%)
 Light Grayish Blue: hsl(220, 16%, 96%)
 Very Light Gray: hsl(0, 0%, 98%)
 White: hsl(0, 0%, 100%)
+
 Typography
 Headings: SK Modernist
 Body Text: Public Sans
