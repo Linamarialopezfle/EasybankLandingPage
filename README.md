@@ -54,6 +54,7 @@ A/B Testing: Implement A/B tests to experiment with different versions of the pa
 ![EasyBank](https://github.com/Linamarialopezfle/EasybankLandingPage/assets/59810941/521fc2a4-793e-4d0b-a7b0-58c6a4447dd5)
 
 🎨Style Guide
+
 ![PALETA DE COLORES](https://github.com/Linamarialopezfle/EasybankLandingPage/assets/59810941/eac6793e-3e72-4975-8972-46014519c088)
 
 Color Palette
