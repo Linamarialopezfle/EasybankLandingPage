@@ -47,7 +47,7 @@ Regular Updates: Perform periodic updates to the content and design.
 Feedback Analysis: Regularly review user feedback and make necessary changes to improve the experience.
 A/B Testing: Implement A/B tests to experiment with different versions of the page and determine which works best.
 
-![EasyBank](https://github.com/Linamarialopezfle/EasybankLandingPage/assets/59810941/24cb09fb-0f59-4718-a866-e8a3b75d0323)
+![EasyBank](https://github.com/Linamarialopezfle/EasybankLandingPage/assets/59810941/521fc2a4-793e-4d0b-a7b0-58c6a4447dd5)
 
 🎨Style Guide
 ![PALETA DE COLORES](https://github.com/Linamarialopezfle/EasybankLandingPage/assets/59810941/eac6793e-3e72-4975-8972-46014519c088)
